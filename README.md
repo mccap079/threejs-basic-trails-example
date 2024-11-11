@@ -36,4 +36,4 @@ Setup
 1. Clone repo
 2. cd to repo root
 3. `$ npm i` to install pkgs (threejs, webpack, webpack-cli, webpack-dev-server)
-4. `$npm run dev` to run the example via localhost
+4. `$ npm run dev` to run the example via localhost
