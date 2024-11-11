@@ -1,6 +1,8 @@
 Threejs example: trails effect / feedback looping with frame buffers
 ====
 
+![screenshot](https://github.com/mccap079/threejs-basic-trails-example/blob/main/info.png?raw=true)
+
 Description
 ----
 

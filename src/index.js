@@ -52,7 +52,7 @@ function init() {
     renderer.autoClear = false;
     document.body.appendChild(renderer.domElement);
 
-    //red box
+    //a red box
     let b_g = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
     let b_m = new THREE.MeshBasicMaterial({color: 0xff0000});
     b = new THREE.Mesh(b_g, b_m);
@@ -84,7 +84,7 @@ function animate() {
     requestAnimationFrame(animate);
     let time = performance.now() * 0.001;
     b.rotation.y = time * 0.2;
-    b.position.x = Math.sin(time * 3) * 100;
+    b.position.x = Math.sin(time * 4) * 100;
     b.position.y = Math.cos(time * 2) * 100;    
     render();
     stats.end();
@@ -92,13 +92,13 @@ function animate() {
 
 function render() {
 
-    // Swap the render targets
+    //swap the render targets
     const nextRt = currentRt === rt1 ? rt2 : rt1;
     renderer.setRenderTarget(nextRt);
     renderer.clear();
     renderer.render(scene, camera);
 
-    // Update the current render target for the next frame
+    //update the current render target for the next frame
     currentRt = nextRt;
 
     renderer.setRenderTarget(null);
